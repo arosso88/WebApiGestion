@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApiGestion.Domain\WebApiGestion.Domain.csproj" />
+    <ProjectReference Include="..\WebApiGestion.Dtos\WebApiGestion.Dtos.csproj" />
+    <ProjectReference Include="..\WebApiGestion.EF\WebApiGestion.EF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\WebApiGestion.Assemblies\AutoMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
