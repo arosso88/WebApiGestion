@@ -20,6 +20,18 @@
 
         public DbSet<SA_Usuarios> SA_Usuarios { get; set; }
 
+        public DbSet<TiposMonedas> TiposMonedas { get; set; }
+
+        public DbSet<CategoriasIvaArticulo> CategoriasIvaArticulo { get; set; }
+
+        public DbSet<Clientes> Clientes { get; set; }
+
+        public DbSet<TiposComprobantes> TiposComprobantes { get; set; }
+
+        public DbSet<ComprobantesEmitidos> ComprobantesEmitidos { get; set; }
+
+        public DbSet<DetalleComprobantesEmitidos> DetalleComprobantesEmitidos { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();

@@ -14,7 +14,12 @@
 
         public int art_ume_Id { get; set; }
 
+        public int art_cia_Id { get; set; }
+
         [ForeignKey(nameof(art_ume_Id))]
         public virtual UnidadesMedida UnidadesMedida { get; set; }
+
+        [ForeignKey(nameof(art_cia_Id))]
+        public virtual CategoriasIvaArticulo CategoriasIvaArticulo { get; set; }
     }
 }
