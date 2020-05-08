@@ -8,10 +8,14 @@
 
         public string art_Descripcion { get; set; }
 
-        public string art_ume_Id { get; set; }
+        public int art_ume_Id { get; set; }
+
+        public int art_cia_Id { get; set; }
 
         public string CodigoUME { get; set; }
 
         public string DescripcionUME { get; set; }
+
+        public string DescripcionCIA { get; set; }
     }
 }

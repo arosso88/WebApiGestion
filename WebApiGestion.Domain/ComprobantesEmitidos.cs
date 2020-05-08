@@ -4,7 +4,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public class ComprobantesEmitidos
+    public partial class ComprobantesEmitidos
     {
         [Key]
         public int cem_Id { get; set; }

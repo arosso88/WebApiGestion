@@ -3,7 +3,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public class DetalleComprobantesEmitidos
+    public partial class DetalleComprobantesEmitidos
     {
         [Key]
         public int dce_Id { get; set; }
@@ -40,9 +40,5 @@
 
         [ForeignKey(nameof(dce_ume_IdPrecio))]
         public virtual UnidadesMedida UnidadesMedidaPrecio { get; set; }
-
-
-
-
     }
 }
