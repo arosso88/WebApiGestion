@@ -12,6 +12,11 @@
             services.AddTransient<IServiceArticulos, ServiceArticulos>();
             services.AddTransient<IServiceUnidadesMedida, ServiceUnidadesMedida>();
             services.AddTransient<IServiceSAUsuarios, ServiceSAUsuarios>();
+            services.AddTransient<IServiceCategoriasIvaArticulo, ServiceCategoriasIvaArticulo>();
+            services.AddTransient<IServiceTiposMonedas, ServiceTiposMonedas>();
+            services.AddTransient<IServiceClientes, ServiceClientes>();
+            services.AddTransient<IServiceTiposComprobantes, ServiceTiposComprobantes>();
+            services.AddTransient<IServiceComprobantesEmitidos, ServiceComprobantesEmitidos>();
 
             services.AddTransient<IContextManager, ContextManager>();
             services.AddTransient<IBuscadorArticulos, BuscadorArticulos>();
