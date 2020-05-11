@@ -11,6 +11,11 @@
             Mapper.CreateMap<Articulos, ArticulosDto>();
             Mapper.CreateMap<UnidadesMedida, UnidadesMedidaDto>();
             Mapper.CreateMap<SA_Usuarios, SA_UsuariosDto>();
+            Mapper.CreateMap<CategoriasIvaArticulo, CategoriasIvaArticuloDto>();
+            Mapper.CreateMap<TiposMonedas, TiposMonedasDto>();
+            Mapper.CreateMap<TiposComprobantes, TiposComprobantesDto>();
+            Mapper.CreateMap<ComprobantesEmitidos, ComprobantesEmitidosDto>();
+            Mapper.CreateMap<Clientes, ClientesDto>();
         }
     }
 }
