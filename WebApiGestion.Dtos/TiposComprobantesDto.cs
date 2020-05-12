@@ -13,5 +13,9 @@
         public string tco_DebitoCreditoVdor { get; set; }
 
         public string tco_DebitoCreditoCdor { get; set; }
+
+        public string tco_EmitidoRecibido { get; set; }
+
+        public string DescripcionTNU { get; set; }
     }
 }

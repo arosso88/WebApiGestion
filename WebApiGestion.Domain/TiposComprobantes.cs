@@ -20,6 +20,8 @@
 
         public int tco_tnu_Id { get; set; }
 
+        public string tco_EmitidoRecibido { get; set; }
+
         [ForeignKey(nameof(tco_tnu_Id))]
         public virtual TablasNumeracion TablasNumeracion { get; set; }
     }
