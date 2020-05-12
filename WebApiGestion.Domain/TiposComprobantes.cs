@@ -1,8 +1,9 @@
 ﻿namespace WebApiGestion.Domain
 {
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
-    public class TiposComprobantes
+    public partial class TiposComprobantes
     {
         [Key]
         public int tco_Id { get; set; }
@@ -16,5 +17,10 @@
         public string tco_DebitoCreditoVdor { get; set; }
 
         public string tco_DebitoCreditoCdor { get; set; }
+
+        public int tco_tnu_Id { get; set; }
+
+        [ForeignKey(nameof(tco_tnu_Id))]
+        public virtual TablasNumeracion TablasNumeracion { get; set; }
     }
 }

@@ -17,6 +17,7 @@
             services.AddTransient<IServiceClientes, ServiceClientes>();
             services.AddTransient<IServiceTiposComprobantes, ServiceTiposComprobantes>();
             services.AddTransient<IServiceComprobantesEmitidos, ServiceComprobantesEmitidos>();
+            services.AddTransient<IServiceTablasNumeracion, ServiceTablasNumeracion>();
 
             services.AddTransient<IContextManager, ContextManager>();
             services.AddTransient<IBuscadorArticulos, BuscadorArticulos>();

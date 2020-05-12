@@ -32,6 +32,8 @@
 
         public DbSet<DetalleComprobantesEmitidos> DetalleComprobantesEmitidos { get; set; }
 
+        public DbSet<TablasNumeracion> TablasNumeracion { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();
