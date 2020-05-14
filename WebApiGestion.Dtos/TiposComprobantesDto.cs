@@ -17,5 +17,9 @@
         public string tco_EmitidoRecibido { get; set; }
 
         public string DescripcionTNU { get; set; }
+
+        public string tco_MovimientoStock { get; set; }
+
+        public int tco_tnu_Id { get; set; }
     }
 }
