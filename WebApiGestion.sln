@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiGestion.Assemblies", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiGestion.Services", "WebApiGestion.Services\WebApiGestion.Services.csproj", "{BE7B6E4C-0061-4597-B5FE-C044CB36D976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiGestion.Dtos", "WebApiGestion.Dtos\WebApiGestion.Dtos.csproj", "{D5AC9211-9F25-43FB-A7AE-8929C8826C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiGestion.Dtos", "WebApiGestion.Dtos\WebApiGestion.Dtos.csproj", "{D5AC9211-9F25-43FB-A7AE-8929C8826C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiGestion.Shared", "WebApiGestion.Shared\WebApiGestion.Shared.csproj", "{5E0FA88F-7462-44F4-B718-EC7930AFF3EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D5AC9211-9F25-43FB-A7AE-8929C8826C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5AC9211-9F25-43FB-A7AE-8929C8826C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5AC9211-9F25-43FB-A7AE-8929C8826C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E0FA88F-7462-44F4-B718-EC7930AFF3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0FA88F-7462-44F4-B718-EC7930AFF3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0FA88F-7462-44F4-B718-EC7930AFF3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0FA88F-7462-44F4-B718-EC7930AFF3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

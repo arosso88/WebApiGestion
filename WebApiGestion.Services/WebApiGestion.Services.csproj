@@ -12,6 +12,7 @@
     <ProjectReference Include="..\WebApiGestion.Domain\WebApiGestion.Domain.csproj" />
     <ProjectReference Include="..\WebApiGestion.Dtos\WebApiGestion.Dtos.csproj" />
     <ProjectReference Include="..\WebApiGestion.EF\WebApiGestion.EF.csproj" />
+    <ProjectReference Include="..\WebApiGestion.Shared\WebApiGestion.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

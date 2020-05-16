@@ -20,10 +20,10 @@
 
         [HttpGet]
         [Authorize]
-        public IEnumerable<ComprobantesEmitidosDto> GetTodos()
+        public IEnumerable<ComprobantesEmitidosDto> GetTodos(FiltrosComprobantesEmitidosDto filtros)
         {
             this.SetearDBContext(this.service);
-            var todos = Mapper.Map<IEnumerable<ComprobantesEmitidosDto>>(this.service.ObtenerTodos());
+            var todos = Mapper.Map<IEnumerable<ComprobantesEmitidosDto>>(this.service.GetTodosFiltrado(filtros));
             this.DisposeDBContext(this.service.DBContext);
 
             return todos;
