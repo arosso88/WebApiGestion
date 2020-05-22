@@ -33,5 +33,11 @@
         public string NombreVendedor { get; set; }
 
         public string SimboloMoneda { get; set; }
+
+        public int cem_NroPuntoVenta { get; set; }
+
+        public int cem_NroComprobante { get; set; }
+
+        public string cem_Letra { get; set; }
     }
 }

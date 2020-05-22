@@ -25,6 +25,12 @@
 
         public int cem_tmo_Id { get; set; }
 
+        public int cem_NroPuntoVenta { get; set; }
+
+        public int cem_NroComprobante { get; set; }
+
+        public string cem_Letra { get; set; }
+
         [ForeignKey(nameof(cem_tco_Id))]
         public virtual TiposComprobantes TiposComprobantes { get; set; }
 
