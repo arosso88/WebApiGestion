@@ -23,9 +23,11 @@
             services.AddTransient<IBuscadorArticulos, BuscadorArticulos>();
             services.AddTransient<IBuscadorSAUsuarios, BuscadorSAUsuarios>();
             services.AddTransient<IBuscadorComprobantesEmitidos, BuscadorComprobantesEmitidos>();
+            services.AddTransient<IBuscadorTiposComprobantes, BuscadorTiposComprobantes>();
 
             services.AddTransient<ISAUsuariosQueryBuilder, SAUsuariosQueryBuilder>();
             services.AddTransient<IComprobantesEmitidosQueryBuider, ComprobantesEmitidosQueryBuider>();
+            services.AddTransient<ITiposComprobantesQueryBuilder, TiposComprobantesQueryBuilder>();
 
             services.AddTransient<IGeneradorToken, GeneradorToken>();
 
