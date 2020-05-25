@@ -6,6 +6,6 @@
 
     public interface IServiceTiposComprobantes : IServiceT<TiposComprobantes>
     {
-        IEnumerable<TiposComprobantes> GetTodosFiltrado(FiltrosTiposComprobantesDto filtros);|
+        IEnumerable<TiposComprobantes> GetTodosFiltrado(FiltrosTiposComprobantesDto filtros);
     }
 }
