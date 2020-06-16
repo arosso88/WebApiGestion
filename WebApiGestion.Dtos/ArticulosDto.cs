@@ -17,5 +17,7 @@
         public string DescripcionUME { get; set; }
 
         public string DescripcionCIA { get; set; }
+
+        public decimal PorcentajeIva { get; set; }
     }
 }

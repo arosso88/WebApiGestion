@@ -7,5 +7,7 @@
         public string DescripcionUME { get => this.UnidadesMedida.ume_Descripcion; }
 
         public string DescripcionCIA { get => this.CategoriasIvaArticulo.cia_Descripcion; }
+
+        public decimal PorcentajeIva { get => this.CategoriasIvaArticulo.cia_PorcentajeIva; }
     }
 }
