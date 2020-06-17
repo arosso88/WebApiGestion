@@ -34,6 +34,8 @@
 
         public DbSet<TablasNumeracion> TablasNumeracion { get; set; }
 
+        public DbSet<DetalleIvaEmitido> DetalleIvaEmitido { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();

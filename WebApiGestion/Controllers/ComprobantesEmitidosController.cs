@@ -65,7 +65,7 @@
 
         [HttpPost]
         [Authorize]
-        public void Agregar(ComprobantesEmitidosDto dto)
+        public void Agregar(NuevoCEMDto dto)
         {
             this.SetearDBContext(this.service);
             this.service.Agregar(dto);

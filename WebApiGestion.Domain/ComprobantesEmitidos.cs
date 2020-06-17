@@ -1,6 +1,7 @@
 ﻿namespace WebApiGestion.Domain
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
@@ -42,5 +43,9 @@
 
         [ForeignKey(nameof(cem_tmo_Id))]
         public virtual TiposMonedas TiposMonedas { get; set; }
+
+        public virtual ICollection<DetalleComprobantesEmitidos> DetalleComprobantesEmitidos { get; set; }
+
+        public virtual ICollection<DetalleIvaEmitido> DetalleIvaEmitidos { get; set; }
     }
 }

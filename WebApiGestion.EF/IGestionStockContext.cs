@@ -24,5 +24,7 @@
         DbSet<DetalleComprobantesEmitidos> DetalleComprobantesEmitidos { get; set; }
 
         DbSet<TablasNumeracion> TablasNumeracion { get; set; }
+
+        DbSet<DetalleIvaEmitido> DetalleIvaEmitido { get; set; }
     }
 }
