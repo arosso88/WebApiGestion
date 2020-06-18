@@ -68,7 +68,7 @@
         public void Agregar(NuevoCEMDto dto)
         {
             this.SetearDBContext(this.service);
-            this.service.Agregar(dto);
+            this.service.GuardarComprobanteEmitido(dto);
             this.DisposeDBContext(this.service.DBContext);
         }
     }

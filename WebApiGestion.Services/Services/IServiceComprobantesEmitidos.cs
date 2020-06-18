@@ -7,5 +7,7 @@
     public interface IServiceComprobantesEmitidos : IServiceT<ComprobantesEmitidos>
     {
         IEnumerable<ComprobantesEmitidos> GetTodosFiltrado(FiltrosComprobantesEmitidosDto filtros);
+
+        bool GuardarComprobanteEmitido(NuevoCEMDto dto);
     }
 }
