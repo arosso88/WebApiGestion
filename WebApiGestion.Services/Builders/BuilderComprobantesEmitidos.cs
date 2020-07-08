@@ -5,17 +5,17 @@
 
     public class BuilderComprobantesEmitidos : IBuilderComprobantesEmitidos
     {
-        public ComprobantesEmitidos Generar(NuevoCEMDto dto)
+        public ComprobantesEmitidos Generar(ComprobantesEmitidosDto cemDto)
         {
             var cem = new ComprobantesEmitidos
             {
-                cem_tco_Id = dto.tcoId,
-                cem_cli_IdComprador = dto.cliIdComprador,
-                cem_FechaEmision = dto.fecha,
-                cem_tmo_Id = dto.moneda,
-                cem_NroPuntoVenta = dto.ptoVenta,
-                cem_NroComprobante = dto.nro,
-                cem_Letra = dto.letra
+                cem_tco_Id = cemDto.cem_tco_Id,
+                cem_cli_IdComprador = cemDto.cem_cli_IdComprador,
+                cem_FechaEmision = cemDto.cem_FechaEmision,
+                cem_tmo_Id = cemDto.cem_tmo_Id,
+                cem_NroPuntoVenta = cemDto.cem_NroPuntoVenta,
+                cem_NroComprobante = cemDto.cem_NroComprobante,
+                cem_Letra = cemDto.cem_Letra
             };
 
             return cem;

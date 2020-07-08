@@ -4,6 +4,7 @@
     using Services.Buscadores;
     using Services.QueryBuilders;
     using Services.Builders;
+    using Services.Generadores;
     using Microsoft.Extensions.DependencyInjection;
 
     public static class DependencyInjection
@@ -34,6 +35,9 @@
 
             services.AddTransient<IBuilderComprobantesEmitidos, BuilderComprobantesEmitidos>();
             services.AddTransient<IBuilderDetalleComprobantesEmitidos, BuilderDetalleComprobantesEmitidos>();
+
+            services.AddTransient<IGeneradorBase, GeneradorBase>();
+            services.AddTransient<IGeneradorDetalleIvaEmitidos, GeneradorDetalleIvaEmitidos>();
 
             return services;
         }

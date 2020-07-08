@@ -65,10 +65,10 @@
 
         [HttpPost]
         [Authorize]
-        public void Agregar(NuevoCEMDto dto)
+        public void Agregar(ComprobantesEmitidosDto cemDto)
         {
             this.SetearDBContext(this.service);
-            this.service.GuardarComprobanteEmitido(dto);
+            this.service.GuardarComprobanteEmitido(cemDto);
             this.DisposeDBContext(this.service.DBContext);
         }
     }

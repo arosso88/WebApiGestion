@@ -1,6 +1,7 @@
 ﻿namespace WebApiGestion.Dtos
 {
     using System;
+    using System.Collections.Generic;
 
     public class ComprobantesEmitidosDto
     {
@@ -39,5 +40,7 @@
         public int cem_NroComprobante { get; set; }
 
         public string cem_Letra { get; set; }
+
+        public List<DetalleComprobantesEmitidosDto> detalle { get; set; }
     }
 }

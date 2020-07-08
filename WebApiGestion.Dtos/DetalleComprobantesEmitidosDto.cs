@@ -21,15 +21,5 @@
         public int dce_ume_IdCantidad { get; set; }
 
         public int dce_ume_IdPrecio { get; set; }
-
-        public string CodigoArticulo { get; set; }
-
-        public string DescripcionArticulo { get; set; }
-
-        public string SimboloMoneda { get; set; }
-
-        public string UMECantidadCodigo { get; set; }
-
-        public string UMEPrecioCodigo { get; set; }
     }
 }

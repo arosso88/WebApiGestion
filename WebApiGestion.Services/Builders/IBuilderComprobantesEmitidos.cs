@@ -1,7 +1,10 @@
 ﻿namespace WebApiGestion.Services.Builders
 {
+    using Dtos;
+    using Domain;
+
     public interface IBuilderComprobantesEmitidos
     {
-        Domain.ComprobantesEmitidos Generar(Dtos.NuevoCEMDto dto);
+        ComprobantesEmitidos Generar(ComprobantesEmitidosDto cemDto);
     }
 }

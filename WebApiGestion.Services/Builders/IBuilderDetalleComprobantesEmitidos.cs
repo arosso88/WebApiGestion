@@ -5,6 +5,6 @@
 
     public interface IBuilderDetalleComprobantesEmitidos
     {
-        DetalleComprobantesEmitidos Generar(DetalleCEMDto dto, Articulos articulo, int tmoId);
+        DetalleComprobantesEmitidos Generar(DetalleComprobantesEmitidosDto dceDto, Articulos articulo);
     }
 }

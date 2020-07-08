@@ -8,6 +8,6 @@
     {
         IEnumerable<ComprobantesEmitidos> GetTodosFiltrado(FiltrosComprobantesEmitidosDto filtros);
 
-        bool GuardarComprobanteEmitido(NuevoCEMDto dto);
+        bool GuardarComprobanteEmitido(ComprobantesEmitidosDto cemDto);
     }
 }
