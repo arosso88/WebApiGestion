@@ -7,8 +7,7 @@
     using Dtos;
     using Microsoft.AspNetCore.Authorization;
 
-    [ApiController]
-    [Route("[controller]")]
+
     public class ArticulosController : ControladorBaseController
     {
         private IServiceArticulos serviceArticulos;

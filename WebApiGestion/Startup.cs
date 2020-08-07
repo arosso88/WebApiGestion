@@ -7,6 +7,11 @@ namespace WebApiGestion
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.IdentityModel.Tokens;
+    using Microsoft.OpenApi.Models;
+    using Swashbuckle.AspNetCore.SwaggerUI;
+    using System;
+    using System.IO;
+    using System.Reflection;
     using System.Text;
 
     public class Startup
@@ -54,6 +59,20 @@ namespace WebApiGestion
                     )
                 };
             });
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "WebApi Gestion",
+                    Description = "ASP.NET Core Web API",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,6 +95,15 @@ namespace WebApiGestion
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+                c.DocumentTitle = "Todo APIs";
+                c.DocExpansion(DocExpansion.None);
+                c.RoutePrefix = string.Empty;
             });
         }
     }
