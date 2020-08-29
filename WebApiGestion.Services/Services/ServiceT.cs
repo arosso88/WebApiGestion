@@ -12,7 +12,7 @@
 
         public T ObtenerPorId(int id) => this.ObtenerObjeto(id, this.DBContext);
 
-        public void Eliminar(int id)
+        public void Eliminar(object id)
         {
             var dbSet = this.DBContext.Set<T>();
             var objeto = this.DBContext.Set<T>().Find(id);

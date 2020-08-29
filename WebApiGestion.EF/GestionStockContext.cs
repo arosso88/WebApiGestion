@@ -36,6 +36,12 @@
 
         public DbSet<DetalleIvaEmitido> DetalleIvaEmitido { get; set; }
 
+        public DbSet<Productos> Productos { get; set; }
+
+        public DbSet<Cosechas> Cosechas { get; set; }
+
+        public DbSet<OrdenesVenta> OrdenesVenta { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies();

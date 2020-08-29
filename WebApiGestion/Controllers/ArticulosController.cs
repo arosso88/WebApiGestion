@@ -7,7 +7,6 @@
     using Dtos;
     using Microsoft.AspNetCore.Authorization;
 
-
     public class ArticulosController : ControladorBaseController
     {
         private IServiceArticulos serviceArticulos;

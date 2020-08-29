@@ -26,5 +26,11 @@
         DbSet<TablasNumeracion> TablasNumeracion { get; set; }
 
         DbSet<DetalleIvaEmitido> DetalleIvaEmitido { get; set; }
+
+        DbSet<Productos> Productos { get; set; }
+
+        DbSet<Cosechas> Cosechas { get; set; }
+
+        DbSet<OrdenesVenta> OrdenesVenta { get; set; }
     }
 }

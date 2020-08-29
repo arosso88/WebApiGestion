@@ -20,6 +20,9 @@
             services.AddTransient<IServiceTiposComprobantes, ServiceTiposComprobantes>();
             services.AddTransient<IServiceComprobantesEmitidos, ServiceComprobantesEmitidos>();
             services.AddTransient<IServiceTablasNumeracion, ServiceTablasNumeracion>();
+            services.AddTransient<IServiceProductos, ServiceProductos>();
+            services.AddTransient<IServiceCosechas, ServiceCosechas>();
+            services.AddTransient<IServiceOrdenesVenta, ServiceOrdenesVenta>();
 
             services.AddTransient<IContextManager, ContextManager>();
             services.AddTransient<IBuscadorArticulos, BuscadorArticulos>();

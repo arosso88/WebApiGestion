@@ -8,7 +8,7 @@
 
         T ObtenerPorId(int id);
 
-        void Eliminar(int id);
+        void Eliminar(object id);
 
         void Agregar<TDto>(TDto dto) where TDto : class;
 
