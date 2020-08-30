@@ -10,7 +10,7 @@
     {
         public IEnumerable<T> ObtenerTodos() => this.DBContext.Set<T>().ToArray();
 
-        public T ObtenerPorId(int id) => this.ObtenerObjeto(id, this.DBContext);
+        public T ObtenerPorId(object id) => this.ObtenerObjeto(id, this.DBContext);
 
         public void Eliminar(object id)
         {

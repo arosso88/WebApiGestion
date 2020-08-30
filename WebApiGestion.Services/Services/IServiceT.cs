@@ -6,7 +6,7 @@
     {
         IEnumerable<T> ObtenerTodos();
 
-        T ObtenerPorId(int id);
+        T ObtenerPorId(object id);
 
         void Eliminar(object id);
 

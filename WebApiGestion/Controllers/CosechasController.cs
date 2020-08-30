@@ -29,7 +29,7 @@
 
         [HttpGet("{id}")]
         [Authorize]
-        public CosechasDto GetUno(int id)
+        public CosechasDto GetUno(string id)
         {
             this.SetearDBContext(this.service);
             var uno = Mapper.Map<CosechasDto>(this.service.ObtenerPorId(id));
