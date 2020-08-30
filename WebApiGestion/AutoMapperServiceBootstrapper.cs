@@ -17,6 +17,9 @@
             Mapper.CreateMap<ComprobantesEmitidos, ComprobantesEmitidosDto>();
             Mapper.CreateMap<Clientes, ClientesDto>();
             Mapper.CreateMap<TablasNumeracion, TablasNumeracionDto>();
+            Mapper.CreateMap<Productos, ProductosDto>();
+            Mapper.CreateMap<Cosechas, CosechasDto>();
+            Mapper.CreateMap<OrdenesVenta, OrdenesVentaDto>();
         }
     }
 }
